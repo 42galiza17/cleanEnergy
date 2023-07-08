@@ -117,6 +117,7 @@ header .container {
     justify-content: space-between;
     gap: 40px;
     padding:20px;
+    width: 100%;
 }
 
 header .container img {
@@ -423,11 +424,13 @@ input[type="email"] {
     background: transparent;
     outline: none;
     border: 1px solid rgba(255,255,255,0.4) !important;
+    color:#fff;
 }
 
 input[type="submit"] {
     padding: 15px;
     font-size: 16px;
+    color:#fff;
     background: transparent;
 }
 .fields {
@@ -464,7 +467,10 @@ footer .row{
 
 
 
-@media (max-width:500px){
+@media (max-width:768px){
+    #news .list-article .cards {
+        grid-template-columns: 1fr;
+    }
     section#about .row {grid-template-columns: 1fr;
     }
 
@@ -476,4 +482,80 @@ footer .row{
 #news .container .row {
                 
 } 
+
+
+#news .container .row{
+    grid-template-columns: 1fr ;
 }
+
+h1 {
+    font-size: 42px;
+}
+
+#hero .two-buttons {
+    flex-direction: column;
+}
+
+.two-buttons .btn {
+    width: 100%;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+.featured{
+    padding:40px;
+}
+
+#benefits  > .container {padding-top: 0px;}
+
+#benefits > .container > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#benefits > .container > p {
+    margin-bottom: 0;
+}
+
+#news .container {
+    padding-top: 0 !important;
+}
+
+#news .container .row {
+    grid-template-columns: 1fr;
+}
+
+#news .container .row h4 {
+    font-size: 18px;
+}
+
+section#cta-banner .container {
+    grid-template-columns: 1fr;
+}
+
+.all_links {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+input[type="email"] {
+    width: 100% !important;
+}
+
+input[type="submit"] {
+    width: 100% !IMPORTANT;
+}
+
+.fields {
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+}
+
