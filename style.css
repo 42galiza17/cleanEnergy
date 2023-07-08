@@ -537,7 +537,9 @@ p {
 section#cta-banner .container {
     grid-template-columns: 1fr;
 }
-
+section#cta-banner .container > div * {
+    color: #fff;
+}
 .all_links {
     grid-template-columns: 1fr 1fr;
 }
