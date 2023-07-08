@@ -570,3 +570,9 @@ input[type="submit"] {
 
 }
 
+
+@media (max-width:380px){
+.all_links {
+    grid-template-columns: 1fr;
+}
+}
